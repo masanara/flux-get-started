@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: go-demoweb
+  name: go-demoweb
+  namespace: go-demoweb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: go-demoweb
+  template:
+    metadata:
+      labels:
+        app: go-demoweb
+    spec:
+      containers:
+      - image: harbor.nsx.techlab.netone.co.jp/app-image/go-demoweb
+        name: go-demoweb
