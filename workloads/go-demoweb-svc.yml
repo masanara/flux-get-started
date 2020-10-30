@@ -5,7 +5,7 @@ metadata:
   labels:
     app: go-demoweb
   name: go-demoweb
-  namespace: go-demoweb
+  namespace: gitops-demo
 spec:
   ports:
   - port: 8080
