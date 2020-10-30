@@ -6,6 +6,7 @@ metadata:
   name: go-demoweb
   annotations:
     fluxcd.io/automated: "true"
+    fluxcd.io/tag.go-demoweb: glob:b*
   namespace: gitops-demo
 spec:
   replicas: 3
