@@ -4,6 +4,8 @@ metadata:
   labels:
     app: go-demoweb
   name: go-demoweb
+  annotations:
+    fluxcd.io/automated: "true"
   namespace: gitops-demo
 spec:
   replicas: 3
