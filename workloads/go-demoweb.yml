@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -19,5 +20,5 @@ spec:
         app: go-demoweb
     spec:
       containers:
-      - image: harbor.nsx.techlab.netone.co.jp/app-image/go-demoweb:b7.20201030.093254
+      - image: harbor.nsx.techlab.netone.co.jp/app-image/go-demoweb:b1.20201015.081108
         name: go-demoweb
